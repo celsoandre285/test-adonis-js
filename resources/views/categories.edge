@@ -1,0 +1,16 @@
+@layout('layouts.main');
+
+@section('main')
+    Category List
+
+    @if(categories && categories.length > 0)
+
+        @each(category in categories)
+
+        <p>{{category.name}}</p>
+          
+        @endeach
+      
+    @endif
+    
+@endsection

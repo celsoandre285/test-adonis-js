@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog Adonis</title>
+
+ {{--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">  --}}
+<!-- Custom styles for this template -->
+{{css('jumbotron')}}
+{{css('styles')}}
+
+</head>
+<body>
+
+    @!section('before-nav')
+
+        @include('partials.nav')
+
+    @!section('after-nav')
+
+    @!section('before-main')
+    
+        <main role="main">
+
+        @!section('main')
+        
+        </main>
+
+    @!section('before-footer')
+
+    <footer class="container">
+        @include('partials.footer')
+    </footer>
+
+    @!section('after-footer')
+
+    @!section('before-scripts')
+
+        @include('partials.common-scripts')
+
+    @!section('after-scripts')
+
+</body>
+</html>
